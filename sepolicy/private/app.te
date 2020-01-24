@@ -2,3 +2,4 @@
 get_prop(appdomain, vendor_camera_prop)
 
 get_prop(appdomain, vendor_default_prop)
+
