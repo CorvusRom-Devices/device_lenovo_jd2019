@@ -17,7 +17,7 @@
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Inherit some common Corvus-ROM stuff.
-$(call inherit-product, vendor/du/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 scr_resolution := 1080
 TARGET_GAPPS_ARCH := arm64
 
