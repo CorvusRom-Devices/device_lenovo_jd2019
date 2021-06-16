@@ -3,3 +3,5 @@ allow system_app sysfs_zram:dir { search };
 allow system_app sysfs_zram:file { read };
 allow system_app selinuxfs:file { read };
 allow system_app sysfs_kgsl:dir { search };
+allow system_app sysfs_battery_supply:dir { search };
+
