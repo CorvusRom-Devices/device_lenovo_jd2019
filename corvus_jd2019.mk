@@ -19,14 +19,17 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Pixel Experience targets
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Inherit some common PE stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common CorvusOS stuff
+$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_jd2019
+PRODUCT_NAME := corvus_jd2019
 PRODUCT_BRAND := lenovo
 PRODUCT_DEVICE := jd2019
 PRODUCT_MANUFACTURER := lenovo
 PRODUCT_MODEL := Lenovo Z5s
 
 PRODUCT_GMS_CLIENTID_BASE := android-lenovo
+
+RAVEN_LAIR := Official
+TARGET_INCLUDE_PIXEL_CHARGER := true
