@@ -1,8 +1,8 @@
 #
 # Copyright (C) 2019 The PixelExperience Project
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
+	# Licensed under the Apache License, Version 2.0 (the "License");
+# you my not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
 #      http://www.apache.org/licenses/LICENSE-2.0
@@ -20,13 +20,17 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit some common PE stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_jd2019
+PRODUCT_NAME := corvus_jd2019
 PRODUCT_BRAND := lenovo
 PRODUCT_DEVICE := jd2019
 PRODUCT_MANUFACTURER := lenovo
 PRODUCT_MODEL := Lenovo Z5s
 
 PRODUCT_GMS_CLIENTID_BASE := android-lenovo
+
+CORVUS_MAINTAINER := victor10520
+RAVEN_LAIR := Official
+
